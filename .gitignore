@@ -1,0 +1,38 @@
+# Dataset - muito grande para GitHub
+trashnet-master/
+dataset/
+data/
+
+# Arquivos temporários Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Modelos muito grandes (opcional)
+*.h5
+# *.keras  # Descomente se os modelos ficarem muito grandes
