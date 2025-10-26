@@ -67,7 +67,7 @@ Desenvolver e comparar modelos de classificação de imagens para distinguir ent
 - **Loss:** Sparse Categorical Crossentropy
 - **Callbacks:** EarlyStopping
 
-## 🏆 Resultados dos Experimentos
+## Resultados dos Experimentos
 
 ### Comparação Geral dos Modelos
 
@@ -102,18 +102,18 @@ Desenvolver e comparar modelos de classificação de imagens para distinguir ent
 
 ### Análise de Performance
 
-#### ✅ Pontos Fortes do MobileNetV2:
+#### Pontos Fortes do MobileNetV2:
 - **Excelente performance geral** (78.71% acurácia)
 - **Convergência rápida** devido ao Transfer Learning
 - **Boa generalização** em todas as classes
 - **Eficiência computacional** durante inferência
 
-#### ⚠️ Limitações Identificadas:
+#### Limitações Identificadas:
 - **Classe "Trash" mais desafiadora** (menor recall)
 - **Desbalanceamento do dataset** afeta classes minoritárias
 - **Paper vs Cardboard** apresentam alguma confusão
 
-#### 📊 CNN Baseline:
+#### CNN Baseline:
 - **Performance limitada** mas aceitável para arquitetura simples
 - **Dificuldade com classe "Trash"** (0% precision/recall)
 - **Overfitting mais pronunciado** devido ao tamanho limitado do dataset
@@ -138,18 +138,18 @@ Desenvolver e comparar modelos de classificação de imagens para distinguir ent
 ## 📁 Estrutura de Arquivos
 
 ```
-📦 results/
- ┣ 🤖 models/
+ results/
+ ┣  models/
  ┃ ┗ cnn_baseline_best.keras          # Melhor modelo CNN baseline
- ┣ 📊 plots/
+ ┣  plots/
  ┃ ┣ accuracy/                        # Curvas de acurácia por modelo
  ┃ ┣ loss/                           # Curvas de loss por modelo  
  ┃ ┗ confusion_matrices/             # Matrizes de confusão
- ┣ 📈 history/
+ ┣  history/
  ┃ ┣ cnn_baseline_history.csv        # Histórico treino CNN
  ┃ ┣ mobilenetv2_tl_freeze_history.csv    # Histórico fase frozen
  ┃ ┗ mobilenetv2_tl_finetune_history.csv  # Histórico fine-tuning
- ┗ 📋 reports/
+ ┗  reports/
    ┣ models_comparison.csv            # Comparação entre modelos
    ┣ class_report_cnn_baseline.csv    # Métricas detalhadas CNN
    ┗ class_report_mobilenetv2_tl.csv  # Métricas detalhadas MobileNetV2
@@ -161,7 +161,7 @@ Desenvolver e comparar modelos de classificação de imagens para distinguir ent
 - **`results/history/`** - Históricos de treino em CSV
 - **`results/reports/`** - Relatórios de métricas e comparações
 
-## � Como Executar
+## Como Executar
 
 ### 1. **Clonar repositório:**
 ```bash
@@ -179,7 +179,7 @@ git clone https://github.com/garythung/trashnet.git trashnet-master
 # Extraia para: trashnet-master/
 ```
 
-**⚠️ Estrutura esperada:**
+** Estrutura esperada:**
 ```
 📦 Projeto/
  ┗ 📂 trashnet-master/
@@ -212,19 +212,12 @@ ls results/
 python -c "from tensorflow import keras; model = keras.models.load_model('results/models/cnn_baseline_best.keras')"
 ```
 
-## 📥 Sobre o Dataset
-
-**Por que o dataset não está no repositório?**
-- **Tamanho:** ~500MB+ (excede limites do GitHub)
-- **Boa prática:** Datasets grandes devem ser baixados separadamente  
-- **Performance:** Mantém o repositório leve e clones rápidos
-
 **TrashNet Dataset:**
 - **Fonte original:** https://github.com/garythung/trashnet
 - **Licença:** Consulte o repositório original
 - **Tamanho:** 2.527 imagens (160x160px redimensionadas)
 
-## �🔧 Configuração do Ambiente
+##  Configuração do Ambiente
 
 ### Dependências:
 ```python
@@ -240,7 +233,7 @@ numpy
 - **RAM:** Configuração padrão
 - **Batch Size:** 16 (otimizado para CPU)
 
-## 📈 Conclusões e Insights
+## Conclusões e Insights
 
 ### Principais Achados:
 
